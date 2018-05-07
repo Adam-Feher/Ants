@@ -9,24 +9,16 @@ public class Worker extends Ant {
     public void move(Direction direction) {
         switch (direction) {
             case North:
-                if (posY <= 24) {
-                    this.posY += 1;
-                }
+                this.posY ++;
                 break;
             case East:
-                if (posX <= 24) {
-                    this.posX += 1;
-                }
+                this.posX ++;
                 break;
             case South:
-                if (posY >= -24) {
-                    this.posY -=1;
-                }
+                this.posY --;
                 break;
             case West:
-                if (posX >= -24) {
-                    this.posX -= 1;
-                }
+                this.posX --;
         }
     }
 }
