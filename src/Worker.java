@@ -6,7 +6,7 @@ public class Worker extends Ant {
         this.distance = Math.abs(x)+Math.abs(y);
     }
 
-    public void move(Direction direction) {
+    public void move(Queen queen, Direction direction) {
         switch (direction) {
             case North:
                 this.posY ++;

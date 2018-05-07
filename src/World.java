@@ -11,9 +11,9 @@ public class World {
             ants.add(new Worker(Random.getInstance().nextInt(101, -50), Random.getInstance().nextInt(101, -50)));
         }
 
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 20000; i++) {
             for (Ant ant:ants) {
-                   ant.
+                   ant.move(queen,Direction.values()[Random.getInstance().nextInt(Direction.values().length,0)]);
             }
         }
     }

@@ -12,7 +12,7 @@ public class Soldier extends Ant {
         currentDirection = Direction.North;
     }
 
-    public void move(Direction direction) {
+    public void move(Queen queen, Direction direction) {
         switch (direction) {
             case North:
                 this.posX = (int) startingPos.getX();

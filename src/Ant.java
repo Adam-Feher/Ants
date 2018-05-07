@@ -3,5 +3,5 @@ public abstract class Ant {
     int posY;
     int distance;
 
-    void
+    abstract void move(Queen queen, Direction direction);
 }

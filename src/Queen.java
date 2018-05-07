@@ -1,11 +1,16 @@
 public class Queen extends Ant {
     private int timeLeftToBeInMood;
 
-    public int getTimeLeftToBeInMood() {
+    int getTimeLeftToBeInMood() {
         return timeLeftToBeInMood;
     }
 
-    public void setTimeLeftToBeInMood(int timeLeftToBeInMood) {
+    void setTimeLeftToBeInMood(int timeLeftToBeInMood) {
         this.timeLeftToBeInMood = timeLeftToBeInMood;
+    }
+
+    @Override
+    void move(Queen queen, Direction direction) {
+        this.timeLeftToBeInMood--;
     }
 }

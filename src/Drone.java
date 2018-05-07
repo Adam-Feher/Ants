@@ -7,7 +7,7 @@ public class Drone extends Ant {
         this.distance = Math.abs(x)+Math.abs(y);
     }
 
-    public void move(Queen queen) {
+    public void move(Queen queen, Direction direction) {
         if (distance == 3) {
             welcomeQueen(queen);
         }
